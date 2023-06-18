@@ -1,0 +1,40 @@
+{% load static %}
+
+<style>
+    h2, h1 {
+        width: 40%;
+        text-align: center;
+        margin-top: 10%;
+        padding: 5px;
+        color: rgb(1, 9, 16);
+    }
+    button {
+        background-color: red;
+        color: white;
+        font-size: 30px;
+        width: 40%;
+        height: 50px;
+}
+    
+    
+</style>
+<h1> Counter</h1>
+<h2> {{counterxx}} Time(s)</h2>
+
+<button type="button" id="clear_session">Clear Session</button>
+
+    <script>
+        function clearSession() {
+            window.location.href = "/destroy";
+        }
+
+        document.getElementById("clear_session").onclick = clearSession;
+    </script>
+
+
+
+
+
+
+
+
